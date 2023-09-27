@@ -1,0 +1,333 @@
+/* font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif; */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+nav .collapse ul li {
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+span {
+    color: #757575;
+}
+
+.percentage_after::after {
+    content: "95%";
+    padding-left: 605px;
+    border-color: black;
+    border-style: dotted;
+}
+
+.percentage_after1::after {
+    content: "80%";
+    padding-left: 545px;
+    border-color: black;
+    border-style: dotted;
+}
+
+.percentage_after2::after {
+    content: "90%";
+    padding-left: 555px;
+    border-color: black;
+    border-style: dotted;
+}
+
+.try_dots h3 {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.try_dots h3:after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.back_img_dots .test {
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.back_img_dots .test:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -40px;
+    left: -50px;
+    z-index: -1;
+}
+
+.try_hover {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    height: 88%;
+    align-items: center;
+    z-index: -1;
+}
+
+.main_try_hover:hover .try_hover {
+    z-index: 2;
+}
+
+.try_hover_img {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 95%;
+    height: 95%;
+    align-items: center;
+    z-index: -1;
+}
+
+.main_try_hover_img:hover .try_hover_img {
+    z-index: 2;
+}
+
+.img_hover {
+    transition-duration: 0.5s;
+}
+
+.main_try_hover_img:hover .img_hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+
+:root {
+    --mainColor: #343434;
+}
+
+.back_color {
+    background-color: #F7F7F7;
+}
+
+.color_min_color {
+    color: var(--mainColor);
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.change_word:after {
+    content: "";
+    animation: spin 5s linear infinite;
+}
+
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid black;
+}
+
+@keyframes spin {
+    0% {
+        content: "";
+    }
+
+    3% {
+        content: "e";
+    }
+
+    6% {
+        content: "ev";
+    }
+
+    9% {
+        content: "eve";
+    }
+
+    12% {
+        content: "evel";
+    }
+
+    15% {
+        content: "evelo";
+    }
+
+    18% {
+        content: "evelop";
+    }
+
+    21% {
+        content: "evelope";
+    }
+
+    24% {
+        content: "eveloper";
+    }
+
+    27% {
+        content: "evelope";
+    }
+
+    30% {
+        content: "evelop";
+    }
+
+    33% {
+        content: "evelo";
+    }
+
+    36% {
+        content: "evel";
+    }
+
+    39% {
+        content: "eve";
+    }
+
+    42% {
+        content: "ev";
+    }
+
+    45% {
+        content: "e";
+    }
+
+    48% {
+        content: "";
+    }
+
+
+    57% {
+        content: "e";
+    }
+
+    60% {
+        content: "es";
+    }
+
+    63% {
+        content: "esi";
+    }
+
+    66% {
+        content: "esig";
+    }
+
+    69% {
+        content: "esign";
+    }
+
+    72% {
+        content: "esigne";
+    }
+
+    75% {
+        content: "esigner";
+    }
+
+    78% {
+        content: "esigne";
+    }
+
+    81% {
+        content: "esign";
+    }
+
+    84% {
+        content: "esig";
+    }
+
+    87% {
+        content: "esi";
+    }
+
+    90% {
+        content: "es";
+    }
+
+    93% {
+        content: "e";
+    }
+
+    96% {
+        content: "";
+    }
+
+    99% {
+        content: "";
+    }
+}
+
+.border_hover_color:hover {
+    color: black !important;
+    background-color: white !important;
+    border: 2px solid black !important;
+}
+
+.size_p .row p {
+    font-size: 14px;
+}
+
+.border_edit {
+    background-color: #F6F6F6;
+    transition-duration: 0.8s;
+}
+
+.try_border:hover .border_edit {
+    background-color: black;
+    color: #F6F6F6;
+    transition-duration: 0.8s;
+}
+
+/* .border_edit:hover {
+    background-color: black;
+    color: #F6F6F6;
+    transition-duration: 0.8s;
+} */
+
+.nav-tabs {
+    border: none;
+    max-width: 500px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border: none;
+    color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 3px solid black;
+}
+
+.button_change {}
